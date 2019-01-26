@@ -1,0 +1,12 @@
+{{#each movies}}
+  <img src="{{image}}" alt="{{title}}">
+  <p>{{title}}</p>
+  <p><a href="/movie/{{_id}}">See more</a></p>
+{{/each}}
+<p>{{#if prevPage}}
+    <a href="?page={{prevPage}}&q={{q}}"><<</a>
+  {{/if}} | 
+  {{#if nextPage}}
+    <a href="?page={{nextPage}}&q={{q}}"> >> </a>
+  {{/if}}
+  </p>
